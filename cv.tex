@@ -1,0 +1,149 @@
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Ildar Absalyamov \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+%\vspace{.05in}
+%\begin{tabular}{lr}
+Department of Computer Science and Engineering \hfill	{\it E-mail:}  iabsa001@cs.ucr.edu\\      
+University of California, Riverside \hfill 				{\it Phone:}    (951) 231-8427 \\
+Riverside, CA 92521	\hfill								{\it Website:} \url{http://www.cs.ucr.edu/~iabsa001} \\
+%\end{tabular}
+
+
+\section{\sc Research Interests}
+Database management systems, Distributed systems
+
+\section{\sc Education}
+{\bf University of California, Riverside} \hfill {Riverside, CA}\\
+{\em PhD candidate, Computer Science} \hfill {\it September 2012 - present}\\
+{\bf Advisor: Dr. Vassilis Tsotras} \\
+{GPA: 3.88/4.0}
+
+{\bf Ufa State Aviation Technical University} \hfill { Ufa, Russia }\\
+{\em Specialist (M.Sc. Equivalent), Computer Science} \hfill {\it September 2006 - July 2011}\\
+{GPA: 4.96/5.0, Graduated with honors}
+%{\em Department of Computer Science and Robotics} 
+
+\section{\sc Publications}
+\begin{list2}
+	\item Robert J Halstead, Ildar Absalyamov, Walid Najjar and Vassilis J Tsotras. {\bf ``FPGA-based Multithreading for In-Memory Hash Joins''}, in {\it Proceedings of 7th Biennial Conference on Innovative Data Systems Research (CIDR)}, 2015 (to appear)
+	\item Roger Moussalli, Ildar Absalyamov, Marcos Vieira, Walid Najjar and Vassilis J Tsotras. {\bf ``High performance FPGA and GPU complex pattern matching over spatio-temporal streams''}, in {\it GeoInformatica}, 2014. 
+	\item Ildar Absalyamov, Roger Moussalli, Walid Najjar, Vassilis J Tsotras. {\bf ``High-Performance Holistic XML Twig Filtering Using GPUs''}, { \it in Proceedings of 4th International Workshop on Accelerating Data Management Systems (ADMS)}, 2013.
+\end{list2}
+%\nocite{*}
+%\bibliographystyle{unsrt} 
+%\bibliography{publications} 
+
+\section{\sc Professional and Research Experience}
+
+{\bf University of California, Riverside } \hfill { Riverside, CA } \\
+{\em Graduate research and teaching assistant } \hfill {\it May 2013 - present}\\
+Participated in various research projects. \\
+Responsibilities:
+\begin{list2}
+	\item {\bf AsterixDB}. Added indexing support for optional fields in semistructured data.
+	\item {\bf FPGA-based Multithreading for In-Memory Hash Joins}. Implemented and evaluated performance of in-memory hash join and aggregation operators on modern multi-core architectures.
+	\item {\bf High performance FPGA and GPU complex pattern matching over spatio-temporal streams}. Developed massively parallel algorithm, implementing trajectory pattern matching over spatio-temporal stream data on GPUs.
+	\item {\bf High-Performance Holistic XML Twig Filtering Using GPUs}. Implemented first holistic massively parallel algorithm, performing XPath filtering of XML documents on GPUs. Evaluated performance and demonstrated 4x-9x speedup over state-of-the-art software XML filtering approaches.
+\end{list2}
+
+%Inforbix
+{\bf Inforbix LLC (http://inforbix.com)} \hfill { Boston, Massachusetts USA }\\
+{\em Java Software Engineer} \hfill {\it August 2011 - August 2012}\\
+Participated in development of an enterprise search system for manufacturing companies. Inforbix search system (later acquired by Autodesk) was using semantic relationships to find similarities in different types of files (AutoCAD, SolidWorks, Excel, etc) and linking them using semantic ontologies.\\
+Responsibilities:
+\begin{list2}
+	\item Developed modules of semantic search engine.
+	\item Designed and developed REST service multitenant Java backend architecture.
+	%\item Supported existing semantic database.
+	%\item Created RIA user editor for semantic ontologies.
+	\item Developed distributed performance metric collection tool.
+\end{list2}
+
+{\bf Technical University of Dresden } \hfill { Dresden, Germany} \\
+{\em Exchange Student} \hfill {\it February 2011 - August 2011}\\
+{\bf Advisors: Dr. Christof Fetzer and Andr\'e Martin} 
+
+\vspace{-.3cm}
+Carried out research project aimed to build an Amazon S3 compatible distributed file storage system, implementing incremental backup and partial update features.\\
+Responsibilities:
+\begin{list2}
+	\item Devised and developed distributed file system engine.%, which used hash trees to save files meta information.
+	\item Implemented distributed application architecture, tolerant to individual node failures.
+	\item Implemented RESTful API, emulating standard Amazon S3 API.
+	\item Researched and developed new replica placement and data partitioning strategies for Apache Cassandra.
+\end{list2}
+
+%\section{\sc Professional Experience}
+
+
+%АйТи
+{\bf I.T. Co. (http://it.ru)} \hfill { Ufa, Russia }\\
+{\em Java Software Developer} \hfill {\it February, 2010 - February, 2011}\\
+Implemented server modules for electronic document management system. System was managing business and document workflows of Federal Financial Markets Service of Russia.\\
+Responsibilities:
+\begin{list2}
+%(Web services, workflow definitions, EJB beans)
+	\item Designed and implemented jBPM-based document management module.
+	\item Created business process workflows.
+	\item Developed web services, business logic and data access layer server modules.
+	%\item Developed and designed Lotus Domino integration module.
+	%\item Implemented security model using OpenSSO.
+	\item Developed ESB-services for web service orchestration.
+\end{list2}
+
+\section{\sc Honors and Awards} 
+Dean's Distinguished Fellowship \hfill University of California, Riverside, 2012 \\
+Erasmus Mundus Multic Scholarship \hfill Technical University of Dresden, 2011 \\
+%\vspace*{-2.5mm}
+%Ufa State Aviation Technical University: graduated Magna Cum Laude, 2011
+
+\section{\sc Technical Skills} 
+\begin{list2}
+\item Programming languages:
+%\subitem{$\bullet$} .NET (2 years): WinForms, WPF; WCF (SOAP, RESTful Web Services), NHibernate.
+\subitem{$\bullet$} Java:  Core API, JavaEE, Web-services, JBoss, Tomcat, Maven, Eclipse.
+\subitem{$\bullet$} C/C++, Python, SQL%, Haskel.
+\item Databases: MySQL, Cassandra
+%\item Applications: common Windows spreadsheet, and presentation software, 
+%\item Version control systems: Git, Mercurial, SVN
+\item Tools: Git, \LaTeX, standard Unix/Linux system tools\\ 
+\end{list2}
+
+% \section{\sc Language Skills} 
+% \begin{list2}
+% \item English -- fluent
+% \subitem{$\bullet$} TOEFL iBT Score -- 102
+% \item German -- elementary
+% \subitem{$\bullet$} TU Dresden Sprachkurse -- A1 Level
+% \item Russian -- native
+% \end{list2}
+
+\end{resume}
+\end{document}
