@@ -1,6 +1,7 @@
 \documentclass[margin,line]{res}
 \usepackage{hyperref}
 \usepackage{cite}
+\usepackage{enumitem}
 
 \oddsidemargin -.5in
 \evensidemargin -.5in
@@ -30,14 +31,14 @@
 \section{\sc Contact Information}
 %\vspace{.05in}
 %\begin{tabular}{lr}
-Department of Computer Science and Engineering \hfill	{\it E-mail:}  iabsa001@cs.ucr.edu\\      
-University of California, Riverside \hfill 				{\it Phone:}    (951) 231-8427 \\
+University of California, Riverside \hfill				{\it E-mail:}  iabsa001@cs.ucr.edu\\      
+Department of Computer Science and Engineering \hfill	{\it Phone:}    (951) 231-8427 \\
 Riverside, CA 92521	\hfill								{\it Website:} \url{http://www.cs.ucr.edu/~iabsa001} \\
 %\end{tabular}
 
 
 \section{\sc Research Interests}
-Database management systems, Distributed systems
+Database management systems, Big Data
 
 \section{\sc Education}
 {\bf University of California, Riverside} \hfill {Riverside, CA}\\
@@ -64,23 +65,32 @@ Database management systems, Distributed systems
 
 {\bf University of California, Riverside } \hfill { Riverside, CA } \\
 {\em Graduate research and teaching assistant } \hfill {\it May 2013 - present}\\
-Participated in various research projects. \\
-Responsibilities:
+Research projects:\\
 \begin{list2}
-	\item {\bf AsterixDB}. Added indexing support for optional fields in semistructured data.
-	\item {\bf FPGA-based Multithreading for In-Memory Hash Joins}. Implemented and evaluated performance of in-memory hash join and aggregation operators on modern multi-core architectures.
-	\item {\bf High performance FPGA and GPU complex pattern matching over spatio-temporal streams}. Developed massively parallel algorithm, implementing trajectory pattern matching over spatio-temporal stream data on GPUs.
-	\item {\bf High-Performance Holistic XML Twig Filtering Using GPUs}. Implemented first holistic massively parallel algorithm, performing XPath filtering of XML documents on GPUs. Evaluated performance and demonstrated 4x-9x speedup over state-of-the-art software XML filtering approaches.
+	\item {\bf AsterixDB BDMS (Big Data Management System)}\\
+	Contributed to design and implementation of Asterix - open source database system.\\
+	Responsibilities:
+	\begin{itemize}[label=$\circ$]
+		\item Extended Asterix to index semistructured data by building and exploiting indexes on optional fields.
+		\item Designed a framework for collecting reliable scalable dataset statistics.
+	\end{itemize}
+	\item {\bf Accelerating database applications on modern multithreaded hardware architectures }
+	Responsibilities:
+	\begin{itemize}[label=$\circ$]
+		\item Implemented and evaluated performance of in-memory hash join and aggregation operators on modern multi-core architectures (resulted in CIDR'15 publication).
+		\item Developed massively parallel algorithm, implementing trajectory pattern matching over spatio-temporal stream data on GPUs (resulted in GeoInformatica'14 publication).
+		\item Implemented first holistic massively parallel algorithm, performing XPath filtering of XML documents on GPUs. Evaluated performance and demonstrated 4x-9x speedup over state-of-the-art software XML filtering approaches (resulted in ADMS'13 publication).
+	\end{itemize}
 \end{list2}
 
 %Inforbix
 {\bf Inforbix LLC (http://inforbix.com)} \hfill { Boston, Massachusetts USA }\\
 {\em Java Software Engineer} \hfill {\it August 2011 - August 2012}\\
-Participated in development of an enterprise search system for manufacturing companies. Inforbix search system (later acquired by Autodesk) was using semantic relationships to find similarities in different types of files (AutoCAD, SolidWorks, Excel, etc) and linking them using semantic ontologies.\\
+Participated in development of an enterprise search system for manufacturing companies. Inforbix search engine (later acquired by Autodesk) was using semantic relationships to find similarities in different types of files (AutoCAD, SolidWorks, Excel, etc) and linking them using semantic ontologies.\\
 Responsibilities:
 \begin{list2}
 	\item Developed modules of semantic search engine.
-	\item Designed and developed REST service multitenant Java backend architecture.
+	\item Designed and developed RESTful multitenant backend service architecture.
 	%\item Supported existing semantic database.
 	%\item Created RIA user editor for semantic ontologies.
 	\item Developed distributed performance metric collection tool.
@@ -91,10 +101,10 @@ Responsibilities:
 {\bf Advisors: Dr. Christof Fetzer and Andr\'e Martin} 
 
 \vspace{-.3cm}
-Carried out research project aimed to build an Amazon S3 compatible distributed file storage system, implementing incremental backup and partial update features.\\
+Carried out research project aimed to build an Amazon S3 compatible distributed file storage system, based on Apache Cassandra.\\
 Responsibilities:
 \begin{list2}
-	\item Devised and developed distributed file system engine.%, which used hash trees to save files meta information.
+	\item Devised and developed distributed file system engine, implementing incremental backup and partial update features.%, which used hash trees to save files meta information.
 	\item Implemented distributed application architecture, tolerant to individual node failures.
 	\item Implemented RESTful API, emulating standard Amazon S3 API.
 	\item Researched and developed new replica placement and data partitioning strategies for Apache Cassandra.
@@ -106,7 +116,7 @@ Responsibilities:
 %АйТи
 {\bf I.T. Co. (http://it.ru)} \hfill { Ufa, Russia }\\
 {\em Java Software Developer} \hfill {\it February, 2010 - February, 2011}\\
-Implemented server modules for electronic document management system. System was managing business and document workflows of Federal Financial Markets Service of Russia.\\
+Implemented server modules for electronic document management system managing business and document workflows of Federal Financial Markets Service of Russia.\\
 Responsibilities:
 \begin{list2}
 %(Web services, workflow definitions, EJB beans)
@@ -128,8 +138,10 @@ Erasmus Mundus Multic Scholarship \hfill Technical University of Dresden, 2011 \
 \begin{list2}
 \item Programming languages:
 %\subitem{$\bullet$} .NET (2 years): WinForms, WPF; WCF (SOAP, RESTful Web Services), NHibernate.
-\subitem{$\bullet$} Java:  Core API, JavaEE, Web-services, JBoss, Tomcat, Maven, Eclipse.
-\subitem{$\bullet$} C/C++, Python, SQL%, Haskel.
+	\begin{itemize}[label=$\circ$]
+		\item Java:  Core API, JavaEE, Web-services, JBoss, Tomcat, Maven, Eclipse.
+		\item C/C++, Python, SQL%, Haskel.
+	\end{itemize}
 \item Databases: MySQL, Cassandra
 %\item Applications: common Windows spreadsheet, and presentation software, 
 %\item Version control systems: Git, Mercurial, SVN
